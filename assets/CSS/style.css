@@ -85,11 +85,13 @@ nav {
     font-size: 2rem;
 }
 
+
 /* Main content  */
 main {
     background-color: lightblue;
     /* Make main take up any surplus space to push footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
