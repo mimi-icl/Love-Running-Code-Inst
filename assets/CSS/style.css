@@ -208,6 +208,23 @@ main {
 }
 
 
+/* Gallery page*/
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+/* Media query: larger or landscape phones (576px and up) */
+#photos {
+    column-count: 2;
+    column-gap: 0;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -266,27 +283,28 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+    }
+    
 }
 
-/* Gallery page*/
-
-#photos img {
-    width: 100%;
-    line-height: 1em;
-}
-
-#photos {
-    line-height: 0;
-}
-
-
-/* Large devices (laptops and desktops, 992px and up) */
+/* Media query: Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+    #photos {
+        column-count: 4;
+        column-gap: 0;
+    }
+    
 }
 
+/* Media query: Large devices (laptops and desktops, 1200px and up) */
+ */
 @media screen and (min-width: 1200px) {
     #benefits {
         display: flex;
